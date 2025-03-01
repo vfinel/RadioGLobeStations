@@ -54,6 +54,13 @@ The instructions below assumes that you have ssh'ed into your pi.
 
 - You are done!
 
+But wait ! It would be great if you could contribute back and share your updated ```stations.json``` file with the community. Please consider doing so ! To do that: 
+- make your own fork of the [original RadioGlobe repository](https://github.com/DesignSparkRS/RadioGlobe) 
+- update your ```stations.json``` file in your fork 
+- create a merge request in the original RadioGlobe repo
+- alternatively, you can also fork [my own fork](https://github.com/vfinel/RadioGlobe) instead of the original repo, for example if the original repo maintenance get abandoned.
+
+
 ## explanations
 The code has been written by from [johnmduffy76](https://github.com/johnmduffy76), below the explanations from the [github issue](https://github.com/DesignSparkRS/RadioGlobe/issues/7):
 
