@@ -1,4 +1,4 @@
-This reository gathers code to use the [radio garden](https://radio.garden) API to get a list of radio stations usable by the [radio globe](https://www.instructables.com/RadioGlobe-Spin-to-Search-Over-Web-Radio-2000-Stat/). 
+This repository gathers code to use the [radio garden](https://radio.garden) API to get a list of radio stations usable by the [radio globe](https://www.instructables.com/RadioGlobe-Spin-to-Search-Over-Web-Radio-2000-Stat/). 
 
 Credits to [johnmduffy76](https://github.com/johnmduffy76) who developed the code and shared it [here](https://github.com/DesignSparkRS/RadioGlobe/issues/7#issuecomment-2676891014). Many thanks ! I did minor modifications so that the code can be ran on the raspberry pi directly and added this readme.
 
