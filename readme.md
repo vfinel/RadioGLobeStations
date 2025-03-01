@@ -81,3 +81,8 @@ Then the script ```xlsx_to_json.py``` formats the XLSX format to JSON, which the
 - print execution time of ```radio_garden_processor.py```
 - use [tqdm](https://tqdm.github.io/) to estimate remaining time (requires running the for loops once without streaming to count the number of radio stations to be scanned -or parse json smartly using pandas)
 - use parallel for loops to speed up the process 
+
+# how to contribute 
+If you would like to contribute back to this repo, or learn how to do a fork and a pull request to share your updated stations.json file, that is amazing ! 
+
+Read the following github page to find instructions on how to do so: [contributing to a project](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project).
