@@ -2,6 +2,7 @@ This reository gathers code to use the [radio garden](https://radio.garden) API 
 
 Credits to [johnmduffy76](https://github.com/johnmduffy76) who developed the code and shared it [here](https://github.com/DesignSparkRS/RadioGlobe/issues/7#issuecomment-2676891014). Many thanks ! I did minor modifications so that the code can be ran on the raspberry pi directly and added this readme.
 
+You can get the latest stations list I have fetched [here](https://github.com/vfinel/RadioGlobe/blob/master/stations.json). I will update it once in a while. However if you want to build the most up-to-date stations list yourself, follow the instructions below !
 
 # instructions to run on the pi 
 - ssh into your pi 
