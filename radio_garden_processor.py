@@ -8,7 +8,7 @@ from unidecode import unidecode  # For transliteration
 
 
 # File paths
-input_file = "./radio_garden_places.txt"
+input_url = "https://radio.garden/api/ara/content/places"
 output_file = "./RadioGarden_Complete_Data.xlsx"
 
 # Base API URLs
@@ -16,20 +16,12 @@ location_api_url = "https://radio.garden/api/ara/content/page/"
 channel_api_url = "https://radio.garden/api/ara/content/channel/"
 stream_api_url = "https://radio.garden/api/ara/content/listen/{channel_id}/channel.mp3"
 
-# Load and fix the places data
-with open(input_file, "r", encoding="utf-8") as f:
-    json_str = f.read().strip()
-
-if not json_str.endswith("}}}"):
-    last_valid = json_str.rfind("},")
-
-if last_valid != -1:
-    json_str = json_str[: last_valid + 1] + "]}}"
-
-else:
-    raise ValueError("Cannot find a valid JSON structure to fix")
-
-places_data = json.loads(json_str)
+# get RadioGarden data
+response = requests.get(input_url)
+response.raise_for_status()  # raises exception when not a 2xx response
+if response.status_code != 204:
+    print("successfully got RadioGarden data")
+    places_data = response.json()
 
 # Initialize lists
 names = []
