@@ -28,12 +28,9 @@ grouped = (
 # Convert the dictionary to JSON
 json_data = {k: v for k, v in grouped.items()}
 
-# Get the path to the desktop
-desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
-
 # Write the JSON data to a file on the desktop
-output_file_path = os.path.join(desktop_path, "stations.json")
+output_file_path = "stations.json"
 with open(output_file_path, "w") as f:
     json.dump(json_data, f, indent=2)
 
-print("JSON file has been created successfully on your desktop")
+print(f"The following JSON file has been created successfully: {output_file_path}")
